@@ -1,0 +1,25 @@
+.socialLink {
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 15px;
+}
+#linkedin {
+    text-decoration: none;
+    color: rgb(0, 97, 215);
+}
+#github {
+    color: rgb(0, 0, 58);
+}
+#twitter {
+    color: rgb(0, 166, 255);
+}
+#instagram {
+    color: rgb(255, 0, 149);
+}
+#facebook {
+    color: rgb(12, 122, 255);;
+}
+#whatsapp {
+    color: rgb(0, 234, 0);
+}

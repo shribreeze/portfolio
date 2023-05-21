@@ -1,5 +1,5 @@
 body {
-    background-color:#d67eff;
+    background-color:#110501;
     /* background-image: linear-gradient(to bottom, #79ccff, #90d8ff,#9cdcff, #fdb7ff, #ff9cfc,#f78eff); */
     background-image: linear-gradient(to right bottom, #FDFCFB, #E2D1C3);  
 }
@@ -35,7 +35,7 @@ body {
     position: absolute;
     display: block;
     list-style: none;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.409);
     animation: animate 15s linear infinite;
     bottom: -170px;
     width: 25px;

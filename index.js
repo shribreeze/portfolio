@@ -1,25 +1,90 @@
-//Get the button
-let mybutton = document.getElementById("btn-back-to-top");
+document.addEventListener('DOMContentLoaded', function() {
+  revealOnLoad();
+});
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
+function revealOnLoad() {
+  var reveals = document.querySelectorAll('.reveal1');
 
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+  for (var i = 0; i < reveals.length; i++) {
+    reveals[i].classList.add('active');
   }
 }
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
 
-function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  revealOnLoadpic();
+});
+
+function revealOnLoadpic() {
+  var reveals = document.querySelectorAll('.reveal2');
+
+  for (var i = 0; i < reveals.length; i++) {
+    reveals[i].classList.add('active');
+  }
 }
+
+
+window.addEventListener('scroll', reveal3);
+
+function reveal3() {
+  var reveals = document.querySelectorAll('.reveal3');
+
+  for(var i=0; i<reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var revealTop = reveals[i].getBoundingClientRect().top;
+    var revealPoint = 150;
+
+    if(revealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add('active');
+    }
+    else {
+      reveals[i].classList.remove('active');
+    }
+  }
+}
+
+
+window.addEventListener('scroll', reveal4);
+function reveal4() {
+  var reveals = document.querySelectorAll('.reveal4');
+
+  for(var i=0; i<reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var revealTop = reveals[i].getBoundingClientRect().top;
+    var revealPoint = 150;
+
+    if(revealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add('active');
+    }
+    else {
+      reveals[i].classList.remove('active');
+    }
+  }
+}
+
+window.addEventListener('scroll', reveal5);
+function reveal5() {
+  var reveals = document.querySelectorAll('.reveal5');
+
+  for(var i=0; i<reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var revealTop = reveals[i].getBoundingClientRect().top;
+    var revealPoint = 150;
+
+    if(revealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add('active');
+    }
+    else {
+      reveals[i].classList.remove('active');
+    }
+  }
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var adCard = document.getElementById("ad-card");
+  document.getElementById("close-ad").addEventListener("click", function() {
+      adCard.style.display = "none";
+  });
+});

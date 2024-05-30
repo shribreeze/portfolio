@@ -1,7 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
     background-color:#110501;
     /* background-image: linear-gradient(to bottom, #79ccff, #90d8ff,#9cdcff, #fdb7ff, #ff9cfc,#f78eff); */
-    background-image: linear-gradient(to right bottom, #FDFCFB, #e1cab7);  
+    background-image: linear-gradient(to right bottom, #FDFCFB, #d5b091);  
 }
 .socialLink {
     align-items: center;
@@ -131,13 +134,6 @@ body {
       -moz-border-radius: 50%;  }
   }
 
-  #imgHover {
-    filter: drop-shadow(10px 10px 20px rgb(86, 86, 86));
-  }
-  /* #imgHover:hover {
-    box-shadow: 0px 12px 24px 0px rgba(0,0,0,0.5);
-    transition: .3s;
-  } */
 
   #cardHover {
     box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
@@ -158,3 +154,123 @@ body {
   #button {
     border-radius: 0.9;
   }
+
+  .reveal1 {
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+
+  .reveal1.active {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  .reveal2 {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+
+  .reveal2.active {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  .reveal3 {
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+
+  .reveal3.active {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  .reveal4 {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+
+  .reveal4.active {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .reveal5 {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+
+  .reveal5.active {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  
+
+.techs {
+  display: flex;
+}
+
+#RowIIproject {
+  margin-top: 30px;
+}
+
+/*Hackthon*/
+#ad-card {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #c0c0c0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+#ad-card h3 {
+  margin-top: 0;
+}
+
+.ad-innerFlex {
+  display: flex;
+}
+
+#ad-card button {
+  display: block;
+  margin: 10px 0 0;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#ad-card button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 990px) {
+  #ad-card {
+    position: fixed;
+    top: 100px;
+    left: 27px;
+    height: 470px;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #c0c0c0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+}

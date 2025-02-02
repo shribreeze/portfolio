@@ -1,238 +1,497 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sameer Gautam - Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="./images/favicon2.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./images/faviconIcon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Turret+Road:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Sameer Gautam</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="./Sameer-Gautam-Resume-0924.pdf">Resume</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./certificates.html">Certificates</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <div>
+                <a href="#" class="nav-logo">Sameer</a>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link ">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link ">Skills</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link ">Services</a></li>
+                    <li class="nav-item"><a href="#works" class="nav-link ">Works</a></li>
+                    <li class="nav-item"><a href="#certificate" class="nav-link ">Certificates</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link ">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <section class="home" id="home">
+            <div class="home-container bd-grid">
+                <div class="home-data">
+                    <div class="home-img">
+                        <img src="/images/pic1.png" alt="">
+                    </div>
+
+                    <h1 class="home-title">Sameer Gautam</h1>
+                    <span class="home-profession">Frontend Developer</span>
+
+                    <div class="home-social">
+                        <a href="https://www.linkedin.com/in/sameergautam07/" class="home-social-link" id="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        <a href="https://github.com/shribreeze" class="home-social-link" id="github"><i class="bx bxl-github"></i></a>
+                        <a href="https://www.instagram.com/sameer.gautam_/" class="home-social-link" id="instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=918102137059&text=Hello%20Sameer.%0d%0aHow%20are%20you%20%3f%0d%0aI%20came%20from%20your%20portfolio.&source=&data=#" class="home-social-link" id="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+                    </div>
+
+                    <a href="./Sameer-Gautam-Resume-0924.pdf" class="button home-button">Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <span class="section-subtitle">My intro</span>
+            <h2 class="section-title">About me</h2>
+
+            <div class="about-container bd-grid">
+                <div class="about-data">
+                    <p class="about-description">I’m a passionate developer with expertise in web and software development. With 2+ years of experience leading projects, I specialize in building dynamic applications, Web3 technologies, and user-friendly interfaces. I’m driven by innovation, creative problem-solving, and a commitment to delivering high-quality tech solutions while continuously learning and growing.</p>
+                    <img src="./images/pic2.jpeg" alt="about image" class="about-img">
+                </div>
+
+                <div>
+                    <div class="about-information">
+                        <h3 class="about-information-title">Information</h3>
+    
+                        <div class="about-information-data">
+                            <i class="bx bx-user about-information-icon"></i>
+                            <span>Sameer Gautam</span>
+                        </div>
+    
+                        <div class="about-information-data">
+                            <i class="bx bx-phone about-information-icon"></i>
+                            <span>+91 8102137059</span>
+                        </div>
+    
+                        <div class="about-information-data">
+                            <i class="bx bx-envelope about-information-icon"></i>
+                            <span>sameergautam931@gmail.com</span>
+                        </div>
+                    </div>
+    
+                    <div class="about-information">
+                        <h3 class="about-information-title">Experience and Support</h3>
+    
+                        <div class="about-information-data">
+                            <i class="bx bx-medal about-information-icon"></i>
+                            <div>
+                                <span class="about-information-subtitle">0 Years Job</span>
+                                <span class="about-information-subtitle-small">Experience</span>
+                            </div>
+                        </div>
+    
+                        <div class="about-information-data">
+                            <i class="bx bx-briefcase about-information-icon"></i>
+                            <div>
+                                <span class="about-information-subtitle">10+ Projects</span>
+                                <span class="about-information-subtitle-small">Completed</span>
+                            </div>
+                        </div>
+    
+                        <div class="about-information-data">
+                            <i class="bx bx-support about-information-icon"></i>
+                            <div>
+                                <span class="about-information-subtitle">Support</span>
+                                <span class="about-information-subtitle-small">Online 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <span class="section-subtitle">Why Choose me</span>
+            <h2 class="section-title">My Expertise Area</h2>
+
+            <div class="skills-container bd-grid">
+                <div class="skills-content">
+                    <h3 class="skills-subtitle">Frontend</h3>
+
+                    <div class="skills-data">
+                        <div class="skills-name">HTML/CSS</div>
+                        <div class="skills-number">95%</div>
+                        <div class="skills-bar skills-html"></div>
+                    </div>
+
+                    <div class="skills-data">
+                        <div class="skills-name">Javascript</div>
+                        <div class="skills-number">90%</div>
+                        <div class="skills-bar skills-js"></div>
+                    </div>
+
+                    <div class="skills-data">
+                        <div class="skills-name">React.Js</div>
+                        <div class="skills-number">90%</div>
+                        <div class="skills-bar skills-react"></div>
+                    </div>
+
+                    <div class="skills-data">
+                        <div class="skills-name">Next.Js</div>
+                        <div class="skills-number">85%</div>
+                        <div class="skills-bar skills-nextjs"></div>
+                    </div>
+
+                    <div class="skills-data">
+                        <div class="skills-name">Tailwind/Bootstrap</div>
+                        <div class="skills-number">90%</div>
+                        <div class="skills-bar skills-styling"></div>
+                    </div>
+
+                </div>
+
+                <div class="skills-content">
+                    <h3 class="skills-subtitle">Backend</h3>
+
+                    <div class="skills-data">
+                        <div class="skills-name">Solidity/Web3</div>
+                        <div class="skills-number">80%</div>
+                        <div class="skills-bar skills-web3"></div>
+                    </div>
+
+                    <div class="skills-data">
+                        <div class="skills-name">Node JS</div>
+                        <div class="skills-number">75%</div>
+                        <div class="skills-bar skills-node"></div>
+                    </div>
+
+                    <div class="skills-data">
+                        <div class="skills-name">Firebase</div>
+                        <div class="skills-number">90%</div>
+                        <div class="skills-bar skills-firebase"></div>
+                    </div>
+
+                    <div class="skills-data">
+                        <div class="skills-name">Phyton/C/C++/java</div>
+                        <div class="skills-number">70%</div>
+                        <div class="skills-bar skills-phyton"></div>
+                    </div>
+
+                    <div class="skills-data">
+                        <div class="skills-name">Git/GitHub</div>
+                        <div class="skills-number">85%</div>
+                        <div class="skills-bar skills-git"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="education section">
+            <span class="section-subtitle">Qualification</span>
+            <h2 class="section-title">My Education</h2>
+
+            <div class="education-container bd-grid">
+                <div class="education-content">
+                    <div>
+                        <h3 class="education-year">2018 - 2019</h3>
+                        <span class="education-university">R.P.S. Residential School</span>
+                    </div>
+
+                    <div class="education-time">
+                        <span class="education-rounder"></span>
+                        <span class="education-line"></span>
+                    </div>
+
+                    <div>
+                        <h3 class="education-race">Matriculation</h3>
+                        <span class="education-specialty">CBSE - 81.6 %</span>
+                    </div>
+                </div>
+
+                <div class="education-content">
+                    <div>
+                        <h3 class="education-year">2020 - 2021</h3>
+                        <span class="education-university">Govt. Model Sr. Sec. School</span>
+                    </div>
+
+                    <div class="education-time">
+                        <span class="education-rounder"></span>
+                        <span class="education-line"></span>
+                    </div>
+
+                    <div>
+                        <h3 class="education-race">Intermediate</h3>
+                        <span class="education-specialty">CBSE - 86.4 %</span>
+                    </div>
+                </div>
+
+                <div class="education-content">
+                    <div>
+                        <h3 class="education-year">2021 - 2025</h3>
+                        <span class="education-university">Chandigarh University</span>
+                    </div>
+
+                    <div class="education-time">
+                        <span class="education-rounder"></span>
+                        <span class="education-line"></span>
+                    </div>
+
+                    <div>
+                        <h3 class="education-race">Bachelor of Engineering</h3>
+                        <span class="education-specialty">Computer Science and Engineering</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <span class="section-subtitle">What I Offer</span>
+            <h2 class="section-title">My Services</h2>
+
+            <div class="services-container bd-grid">
+                <div class="services-content">
+                    <i class="bx bx-code services-icon"></i>
+                    <h3 class="services-title">Frontend Web Development</h3>
+                    <p class="services-description">Frontend web development is all about designing the parts of a website that users see and interact with. Using tools like ReactJS and CSS, you can create beautiful, fast, and mobile-friendly websites. This service focuses on making the website look great and work smoothly, so users have the best experience.</p>
+                </div>
+
+                <div class="services-content">
+                    <i class="bx bx-pen services-icon"></i>
+                    <h3 class="services-title">Full-Stack Web Development</h3>
+                    <p class="services-description">Full-stack development means building both the visible parts of a website (frontend) and the behind-the-scenes parts (backend). With tools like MongoDB, ReactJS, and Node.js, you can create complete websites where users can interact, and data is managed securely. It’s perfect for e-commerce, blogs, or any custom website needs.</p>
+                </div>
+
+                <div class="services-content">
+                    <i class="bx bx-brush services-icon"></i>
+                    <h3 class="services-title">Smart Contract Development</h3>
+                    <p class="services-description">Smart contract development uses blockchain technology to build secure, automated systems. With tools like Solidity, you can create programs that handle payments or agreements without needing a middleman. This is great for creating trust in systems like payment apps, token-based rewards, or digital contracts.</p>
+                </div>
+
+                <div class="services-content">
+                    <i class="bx bx-server services-icon"></i>
+                    <h3 class="services-title">E-Commerce Website Development</h3>
+                    <p class="services-description">E-commerce development helps businesses sell products online. You can create websites where users can browse items, add them to a cart, and make secure payments. With tools like ReactJS and Firebase, the shopping experience is smooth and user-friendly. It’s ideal for food delivery, clothing stores, or any online shop.</p>
+                </div>
+
+                <div class="services-content">
+                    <i class="bx bx-pencil services-icon"></i>
+                    <h3 class="services-title">Content Writing</h3>
+                    <p class="services-description">I craft engaging and SEO-optimized content that tells your story and connects with your audience. From website copy and blog posts to marketing materials and social media content, I deliver clear, compelling writing that drives engagement and conversions. My content strategy combines creativity with data-driven insights to ensure your message reaches and resonates with your target market.</p>
+                </div>
+
+                <div class="services-content">
+                    <i class="bx bx-mobile services-icon"></i>
+                    <h3 class="services-title">Mobile Interface</h3>
+                    <p class="services-description">Mobile app development focuses on building apps for smartphones, especially Android. Using Kotlin and Firebase, you can create apps with features like login, real-time updates, and notifications. These apps are easy to use and reliable, making them great for services like food delivery, chat apps, or shop management.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project section">
+            <div class="project-container bd-grid">
+                <div class="project-data">
+                    <h2 class="section-title project-title">Do you have any project in mind?</h2>
+                    <p class="project-description">If you have any project in mind, please contact me. I will be happy to help you.</p>
+                    <a href="#contact" class="button button-light">Contact Me</a>
+                </div>
+
+                <img src="./images/pic3.png" alt="Sameer image" class="project-img">
+            </div>
+        </section>
+
+        <section class="works section" id="works">
+            <span class="section-subtitle">My Portfolio</span>
+            <h2 class="section-title">Recent Works</h2>
+
+            <div class="works-container bd-grid">
+                <div class="works-img">
+                    <img src="./images/Virya-Cover.webp" alt="works project">
+
+                    <div class="works-data">
+                        <a href="https://shribreeze.github.io/virya/" class="works-link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works-title">Vīrya</span>
+                    </div>
+                </div>
+
+                <div class="works-img">
+                    <img src="./images/DrFoodie-Cover.webp" alt="works project">
+
+                    <div class="works-data">
+                        <a href="https://drfoodie-01.web.app/" class="works-link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works-title">Dr.Foodie</span>
+                    </div>
+                </div>
+
+                <div class="works-img">
+                    <img src="./images/Tantu-Cover.webp" alt="works project">
+
+                    <div class="works-data">
+                        <a href="https://tantu.onrender.com" class="works-link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works-title">Tantu</span>
+                    </div>
+                </div>
+
+                <div class="works-img">
+                    <img src="./images/SRP-Cover.webp" alt="works project">
+
+                    <div class="works-data">
+                        <a href="https://www.srpgroups.co.in/" class="works-link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works-title">S.R.P Group</span>
+                    </div>
+                </div>
+
+                <div class="works-img">
+                    <img src="./images/KiddoCash-Cover.webp" alt="works project">
+
+                    <div class="works-data">
+                        <a href="https://kiddo-cash.vercel.app/" class="works-link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works-title">Kiddo Cash</span>
+                    </div>
+                </div>
+
+                <div class="works-img">
+                    <img src="./images/RapidQ-Cover.webp" alt="works project">
+
+                    <div class="works-data">
+                        <a href="https://www.rapidq.in/" class="works-link"><i class="bx bx-link-alt"></i></a>
+                        <span class="works-title">RapidQ</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="certificate">
+            <span class="section-subtitle">Accomplishments</span>
+            <h2 class="section-title" style="text-align: center; color: #CC4B2C;">My Certificates</h2>
+            
+                <div class="certificate-container">
+                    <button id="prevBtn"><img src="./images/previous.svg" width="20px"></button>
+                    <div class="certificate-wrapper">
+                        <div class="certificate-track">
+                            <div class="certificate">
+                                <img src="./certificates/StellarscapeHackathon_page-0001.jpg" alt="Certificate 1">
+                            </div>
+                            <div class="certificate">
+                                <img src="./certificates/Introduction To Programming In C.jpg" alt="Certificate 2">
+                            </div>
+                            <div class="certificate">
+                                <img src="./certificates/Introduction To Soft Computing.jpg" alt="Certificate 3">
+                            </div>
+                            <div class="certificate">
+                                <img src="./certificates/certificate4.jpg" alt="Certificate 4">
+                            </div>
+                            <div class="certificate">
+                                <img src="./certificates/certificate4.jpg" alt="Certificate 5">
+                            </div>
+                            <div class="certificate">
+                                <img src="./certificates/certificate4.jpg" alt="Certificate 6">
+                            </div>
+                            <div class="certificate">
+                                <img src="./certificates/certificate4.jpg" alt="Certificate 7">
+                            </div>
+                            <div class="certificate">
+                                <img src="./certificates/certificate4.jpg" alt="Certificate 8">
+                            </div>
+                            <div class="certificate">
+                                <img src="./certificates/certificate4.jpg" alt="Certificate 9">
+                            </div>
+                            <div class="certificate">
+                                <img src="./certificates/certificate4.jpg" alt="Certificate 10">
+                            </div>
+                        </div>
+                    </div>
+                    <button id="nextBtn"><img src="./images/next.svg" width="20px"></button>
+                </div>
+                <div class="dots-container"></div>
+        </section>
+
+
+        <section class="contact section" id="contact">
+            <span class="section-subtitle">Contact me</span>
+            <h2 class="section-title">Get in Touch</h2>
+
+            <div class="contact-container bd-grid">
+                <form action="https://formspree.io/f/mrgjwoba" method="POST" autocomplete="off" class="contact-form">
+                    <div class="contact-input">
+                        <label for="name">Name</label>
+                        <input type="text" class="contact-input" name="Name" id="name" placeholder="Your Name">
+                      </div>
+                      <div class="contact-input">
+                        <label for="email">Email</label>
+                        <input type="email" class="contact-input" name="Email" id="email" placeholder="Your Email">
+                      </div>
+                      <div class="contact-input">
+                        <label for="message">Message</label>
+                        <textarea class="contact-input" name="Message" id="message" rows="5" placeholder="Your Message"></textarea>
+                      </div>
+                    <input type="submit" value="Send Message" class="button contact-button" >
+                </form>
+
+                <div>
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle">Call me</h3>
+                        <span class="contact-text">+91 8102137059</span>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle">E-mail</h3>
+                        <span class="contact-text">sameergautam931@gmail.com</span>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle">Location</h3>
+                        <span class="contact-text">Chandigarh, CH 160022, India</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer section">
+        <div class="footer-container bd-grid">
+            <h1 class="footer-title">Sameer</h1>
+            <p class="footer-description">I'm a passionate Frontend Developer with a keen eye for creating beautiful, responsive, and user-friendly websites. I stay current with the latest web technologies and frameworks to deliver cutting-edge solutions.</p>
+
+            <div class="footer-social">
+                <a href="https://www.instagram.com/sameer.gautam_/" class="footer-link" id="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100070688760068" class="footer-link" id="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=918102137059&text=Hello%20Sameer.%0d%0aHow%20are%20you%20%3f%0d%0aI%20came%20from%20your%20portfolio.&source=&data=#" class="footer-link" id="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+            </div>
+
+            <p class="footer-copy"><span>Sameer Gautam</span>. All rights reserved - 2025</p>
+        </div>
+    </footer>
+
+    <div id="ad-container">
+        <div id="ad-card">
+          <span style="display: flex;">
+            <h3>Stellarscape Hackathon Winner!&#129321;&#129395;</h3>
+            <img src="./images/cross.svg" class="crossSvg" id="close-ad">
+          </span>
+          <div class="ad-innerFlex">
+            <div>
+              <p>The hackathon focused on crafting innovative Web3 front-end solutions for real-world applications using Next.js and Andromeda.js</p>
+            </div>
+            <img src="./images/HackathonImage.jpeg" alt="Hackathon Image" height="200px">
+          </div>
+        </div>
     </div>
-  </nav>
 
-  <ul class="squares">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
-
-  <!-- About section -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 reveal1">
-          <h2>About Me</h2>
-          <p>I'm Sameer Gautam, a passionate front-end developer.<br> 
-            Specializing in HTML, CSS, JavaScript and frameworks like ReactJs and NextJs, I create visually appealing and user-friendly websites.
-            I am a Quick learner, Creative and Hard Worker. 2+ year experience in working and leading the projects. 
-            I value collaboration, attention to detail, and staying ahead of industry trends. Explore my portfolio for examples of my work. <br>
-            Let's connect and discuss how we can bring your ideas to life!</p><br>
-            <div class="techs">
-              <div class="col-lg-3">
-                <h6><b>Technologies:</b></h6>
-                <h6>HTML</h6>
-                <h6>CSS</h6>
-                <h6>Bootstrap</h6>
-                <h6>JavaScript</h6>
-                <h6>React Js</h6>
-                <h6>Tailwind</h6>
-                <h6>C/C++</h6>
-                <h6>GitHub</h6>
-                <h6>Next Js</h6>
-              </div>
-              <div class="col-lg-3">
-                <h6 style="opacity: 0;"><b>---</b></h6>
-                
-                <h6>MongoDB</h6>
-                <h6>NodeJS</h6>
-                <h6>Postman</h6>
-                <h6>Canva</h6>
-                <h6>DBMS</h6>
-                <h6>Operating System</h6>
-                <h6>Computer Networks</h6>
-              </div>
-            </div>            
-          </div>
-        <div class="col-lg-6 reveal2">
-          <img src="./images/img2.png" alt="Sameer's Photo" class="img-fluid shadow-0" id="imgHover">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects section -->
-  <section id="projects" class="py-5 ">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="row">
-        <div class="col-lg-4 reveal3">
-          <div class="card shadow-0" id="cardHover">
-            <img src="./images/Virya.png" class="card-img-top" alt="Project 1">
-            <div class="card-body">
-              <h5 class="card-title">Vīrya</h5>
-              <p class="card-text">An EdTech Website - HTML, CSS, Bootstrap And JavaScript</p>
-              <button class="btn btn-outline-dark" type="button" onclick="window.location='https://shribreeze.github.io/virya/';">View Project</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 reveal3">
-          <div class="card shadow-0" id="cardHover">
-            <img src="./images/DrFoodie.png" class="card-img-top" alt="Project 2" height="115px">
-            <div class="card-body">
-              <h5 class="card-title">Dr.Foodie</h5>
-              <p class="card-text">A desktop website of full nutrition food tips and diet plans.</p>
-              <button class="btn btn-outline-dark" type="button" onclick="window.location='https://drfoodie-01.web.app/';">View Project</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 reveal3">
-          <div class="card shadow-0" id="cardHover">
-            <img src="./images/tantu.png" class="card-img-top" alt="Project 3" height="115px" padding="2px">
-            <div class="card-body">
-              <h5 class="card-title">Tantu</h5>
-              <p class="card-text">A real-time Chat App - React.js, Nodejs, MongoDB, ChakraUI and socket.io</p>
-              <button class="btn btn-outline-dark" type="button" onclick="window.location='http://tantu.onrender.com';">View Project</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row" id="RowIIproject">
-        <div class="col-lg-4 reveal5">
-          <div class="card shadow-0" id="cardHover">
-            <img src="./images/srp_logo_white.png" class="card-img-top" alt="Project 4">
-            <div class="card-body">
-              <h5 class="card-title">S.R.P Group</h5>
-              <p class="card-text">Freelance - A Pharmaceutical Website - HTML, Tailwind and JavaScript</p>
-              <button class="btn btn-outline-dark" type="button" onclick="window.location='https://shri-rp-group.vercel.app/';">View Project</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 reveal5">
-          <div class="card shadow-0" id="cardHover">
-            <img src="./images/kiddo-cash.png" class="card-img-top" alt="Project 5" height="115px">
-            <div class="card-body">
-              <h5 class="card-title">Kiddo Cash</h5>
-              <p class="card-text">Blockchain based Wallet for kids and parents.</p>
-              <button class="btn btn-outline-dark" type="button" onclick="window.location='https://kiddo-cash.vercel.app/';">View Project</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 reveal5">
-          <div class="card shadow-0" id="cardHover">
-            <img src="./images/LogoMini.png" class="card-img-top" alt="Project 6" height="115px" padding="2px">
-            <div class="card-body">
-              <h5 class="card-title">QuickQ</h5>
-              <p class="card-text">Online Food Ordering Platform - React.js, Firebase</p>
-              <button class="btn btn-outline-dark" type="button" onclick="window.location='https://quickq-17384.firebaseapp.com/';">View Project</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact section -->
-  <section id="contact" class="py-5">
-    <div class="container reveal4">
-      <h2>Contact</h2>
-      <div class="row">
-        <div class="col-lg-6">
-          <form action="https://formspree.io/f/mrgjwoba" method="POST" autocomplete="off">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" name="Name" id="name" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" name="Email" id="email" placeholder="Your Email">
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea class="form-control" name="Message" id="message" rows="5" placeholder="Your Message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-outline-dark">Send Message</button>
-          </form>
-        </div>
-        <div class="col-lg-6">
-            <div class="col-md-4 col-lg-3 col-xl-7 mb-md-0 mb-4"><br>
-              <p><i class="fas fa-home me-3"></i>&nbsp; Chandigarh, CH 160022, IND</p>
-              <p><i class="fas fa-envelope me-3"></i>&nbsp; sameergautam931@gmail.com</p>
-              <p><i class="fas fa-phone-alt me-3"></i>&nbsp; +91 810-213-7059</p>  
-            </div>
-          <div class="socialLink">
-              <a href="https://www.linkedin.com/in/sameergautam07/" target="_blank" id="linkedin"><i class="fab fa-linkedin"></i></a>&nbsp; 
-              <a href="https://github.com/shribreeze" target="_blank" id="github"><i class="fab fa-github"></i></a>&nbsp; 
-              <a href="https://twitter.com/ImSameerGautam" target="_blank" id="twitter"><i class="fab fa-twitter"></i></a>&nbsp; 
-              <a href="https://www.instagram.com/sameer.gautam_/" target="_blank" id="instagram"><i class="fab fa-instagram"></i></a>&nbsp; 
-              <a href="https://www.facebook.com/profile.php?id=100070688760068" target="_blank" id="facebook"><i class="fab fa-facebook"></i></a>&nbsp; 
-              <a href="https://api.whatsapp.com/send?phone=918102137059&text=Hello%20Sameer.%0d%0aHow%20are%20you%20%3f%0d%0aI%20came%20from%20your%20portfolio.&source=&data=#" target="_blank" id="whatsapp"><i class="fab fa-whatsapp"></i></a>&nbsp; 
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-4 text-center">
-    <p>&copy; 2023 Sameer Gautam. All rights reserved.</p>
-  </footer>
-
-  <div id="ad-container">
-    <div id="ad-card">
-      <span style="display: flex;">
-        <h3 >Stellarscape Hackathon Winner!&#129321;&#129395;</h3>
-        <img src="./images/cross.svg" class="crossSvg" id="close-ad">
-      </span>
-      <div class="ad-innerFlex">
-        <div>
-          <p>The hackathon focused on crafting innovative Web3 front-end solutions for real-world applications using Next.js and Andromeda.js</p>
-          <!-- <button id="close-ad">Close</button> -->
-        </div>
-        <img src="./images/HackathonImage.jpeg" alt="Hackathon Image" height="200px">
-      </div>
-    </div>
-  </div>
-
-  <script src="index.js"></script>
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

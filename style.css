@@ -203,7 +203,8 @@ img { max-width: 100%; display: block; height: auto; }
     .skills-html { width: 95%; }
     .skills-js { width: 90%; }
     .skills-react { width: 90%; }
-    .skills-nextjs { width: 85%; }
+    .skills-nextjs { width: 90%; }
+    .skills-ts { width: 85%; }
     .skills-styling { width: 90%; }
 
     

@@ -208,11 +208,28 @@ img { max-width: 100%; display: block; height: auto; }
     .skills-styling { width: 90%; }
 
     
-    .skills-git { width: 85%; }
-    .skills-node { width: 75%; }
-    .skills-firebase { width: 90%; }
-    .skills-phyton { width: 70%; }
-    .skills-web3 { width: 80%; }
+    .skills-langchain { width: 95%; }
+    .skills-mcpserver { width: 90%; }
+    .skills-v0 { width: 95%; }
+    .skills-n8n { width: 80%; }
+    .skills-openai { width: 90%; }
+    .skills-claude { width: 90%; }
+
+
+    .skills-firebase { width: 85%; }
+    .skills-nodejs { width: 75%; }
+    .skills-mongodb { width: 80%; }
+    .skills-railway { width: 75%; }
+    .skills-postman { width: 85%; }
+    /* .skills-styling { width: 90%; } */
+
+
+    .skills-solidity { width: 85%; }
+    .skills-web3js { width: 90%; }
+    .skills-nextauth { width: 90%; }
+    .skills-prisma { width: 85%; }
+    .skills-cpp { width: 90%; }
+    /* .skills-styling { width: 90%; } */
 
 
 /* Education */

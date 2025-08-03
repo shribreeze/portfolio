@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { Github, Linkedin, Twitter, Mail, Heart, ArrowUp } from "lucide-react"
+import Image from "next/image"
 
 export default function Footer() {
   const ref = useRef(null)
@@ -72,11 +73,19 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-2"
           >
-            <div className="text-3xl font-bold text-gradient mb-4">SG.dev</div>
-            <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
+            {/* <div className="text-3xl font-bold text-gradient mb-4">SG.dev</div> */}
+            {/* <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
               Front-End focused Full-Stack Developer & Web3 Innovator crafting the future with cutting-edge technologies. Building
               scalable solutions that bridge the gap between innovation and user experience.
-            </p>
+            </p> */}
+            <Image
+              src="/og-image.png"
+              alt="OG Image Banner"
+              width={300}
+              height={165}
+              priority
+              className="rounded-xl shadow-lg mb-4"
+            />
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
                 <motion.a

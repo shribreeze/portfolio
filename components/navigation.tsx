@@ -1,10 +1,11 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react"
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,7 +15,7 @@ export default function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const navItems = ["About", "Projects","Certifications", "Freelance", "Contact"]
+  const navItems = ["About", "Projects", "Certifications", "Freelance", "Contact"]
 
   return (
     <motion.nav
@@ -31,6 +32,7 @@ export default function Navigation() {
             SG.dev
           </motion.div>
 
+          {/* Desktop Nav */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item, index) => (
               <motion.a
@@ -53,12 +55,46 @@ export default function Navigation() {
             ))}
           </div>
 
-          <motion.button className="md:hidden text-cyan-400 cursor-pointer" whileTap={{ scale: 0.95 }}>
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+          {/* Mobile Toggle Button */}
+          <motion.button
+            className="md:hidden text-cyan-400 cursor-pointer"
+            whileTap={{ scale: 0.95 }}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? (
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            ) : (
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            )}
           </motion.button>
         </div>
+
+        {/* Mobile Menu */}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              className="md:hidden mt-4 space-y-4 backdrop-blur-md px-2"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+            >
+              {navItems.map((item) => (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase().replace(" & ", "-").replace(" ", "-")}`}
+                  className="block text-gray-300 hover:text-cyan-400 transition-colors duration-300"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item}
+                </a>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </motion.nav>
   )

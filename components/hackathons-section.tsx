@@ -8,22 +8,38 @@ import { Trophy, Users, Calendar, ExternalLink, Award, Code, Zap } from "lucide-
 const hackathons = [
   {
     id: 1,
+    name: "Somnia DeFi Mini Hackathon",
+    event: "Build DeFi protocols, NFT utilities or Dev tooling apps that can run entirely on Somnia.",
+    date: "September 2025",
+    team: "Solo",
+    position: "Ongoing",
+    prize: "$15000",
+    project: "Universal Subscription Protocol",
+    description: "The Stripe of Web3 - On-chain subscription system on Somnia with streaming payments, cancel-anytime access, NFT-based gating, and a Next.js frontend for real-time subscription management.",
+    tech: ["Next.js", "TypeScript", "Solidity", "Wagmi", "Ethers.js"],
+    demo: "#",
+    logo: "/placeholder.svg?height=80&width=80",
+    category: "Web3",
+    color: "from-cyan-500 to-blue-500",
+  },
+  {
+    id: 2,
     name: "Somnia x DoraHacks",
     event: "Somnia Mini Games Global Hackathon 2025",
     date: "August 2025",
     team: "Solo",
-    position: "Ongoing",
-    prize: "$5,000",
+    position: "2nd Prize",
+    prize: "$5000",
     project: "Mine & Escape",
     description: "A fully decentralized Web3 mining game built with Next.js, deployed on Somnia Testnet. Players dig for gems, avoid bombs, and earn STT tokens through strategic gameplay.",
     tech: ["Next.js", "TypeScript", "Solidity", "Wagmi", "GameFi"],
     demo: "https://mineandescape.vercel.app/",
-    logo: "/placeholder.svg?height=80&width=80",
+    logo: "/MineEscape.png?height=80&width=80",
     category: "Web3",
     color: "from-purple-500 to-pink-500",
   },
   {
-    id: 2,
+    id: 3,
     name: "Stellarscape Explorer Hackathon",
     event: "Create UI and embeddable solutions for real-world use cases using andromeda.js and ADOs.",
     date: "April 2024",
@@ -39,7 +55,7 @@ const hackathons = [
     color: "from-orange-500 to-red-500",
   },
   {
-    id: 3,
+    id: 4,
     name: "Stellarscape Explorer Hackathon",
     event: "Use aOS to turn your ideas into real-world applications using provided no-code embeddable builders.",
     date: "April 2024",
@@ -72,7 +88,7 @@ const hackathons = [
   // },
   // {
   //   id: 5,
-  //   name: "HackTheNorth 2023",
+  //   name: "Somnia DeFi Mini Hackathon",
   //   event: "Canada's Biggest Hackathon",
   //   date: "September 2023",
   //   team: "InnovatorsHub",
@@ -105,8 +121,8 @@ const hackathons = [
 ]
 
 const achievements = [
-  { icon: <Trophy className="w-6 h-6" />, label: "5+ Hackathons", value: "Participated" },
-  { icon: <Award className="w-6 h-6" />, label: "2 Wins", value: "& Top Positions" },
+  { icon: <Trophy className="w-6 h-6" />, label: "6+ Hackathons", value: "Participated" },
+  { icon: <Award className="w-6 h-6" />, label: "3 Wins", value: "& Top Positions" },
   { icon: <Users className="w-6 h-6" />, label: "10+ Developers", value: "Collaborated" },
   { icon: <Code className="w-6 h-6" />, label: "7+ Projects", value: "Built" },
 ]

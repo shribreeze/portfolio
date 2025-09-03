@@ -143,7 +143,7 @@ export default function HeroSection() {
             className="glass px-8 py-4 rounded-full text-lg font-semibold neon-glow cursor-pointer hover-lift"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => window.open("/Sameer_Gautam-Resume-0725.pdf", "_blank")}
+            onClick={() => window.open("/Sameer-Resume-0825.pdf", "_blank")}
           >
             📄 Resume →
           </motion.button>

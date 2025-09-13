@@ -16,7 +16,7 @@ const hackathons = [
     prize: "$15000",
     project: "Universal Subscription Protocol",
     description: "The Stripe of Web3 - On-chain subscription system on Somnia with streaming payments, cancel-anytime access, NFT-based gating, and a Next.js frontend for real-time subscription management.",
-    tech: ["Next.js", "TypeScript", "Solidity", "Wagmi", "Ethers.js"],
+    tech: ["Next.js", "TypeScript", "Solidity", "Wagmi", "Ethers.js", "AI"],
     demo: "#",
     logo: "/placeholder.svg?height=80&width=80",
     category: "Web3",
